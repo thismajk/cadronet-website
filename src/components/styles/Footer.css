@@ -1,0 +1,35 @@
+footer nav{
+    padding: 33px 0px;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+}
+.footerBtn{
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.footerBtn:hover{
+    color: var(--gray-color);
+    text-decoration: none;
+}
+.footerBottom{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 6px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .footerBtn{
+        display: block;
+        padding: 15px 0px;
+    }
+}

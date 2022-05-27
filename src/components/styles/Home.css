@@ -1,0 +1,62 @@
+.hero{
+    background-color: var(--gray-color);
+    width: 100%;
+    height: 60vh;
+  }
+  .heroImg{
+      max-width: calc(100% - 24px);
+      max-height: 63vh;
+      margin-top: 5%;
+  }
+  .heroTextBox{ 
+      margin-top: 30%;
+      margin-left: 20%;
+      margin-right: 30px;
+
+  }
+  .heroHeader{
+    font-weight: 700;
+    font-size: 4vw;
+    color: var(--primary-color);
+  }
+  .heroText{
+    font-weight: 600;
+    font-size: 1.5vw;
+    color: var(--secondary-color);
+    
+  }
+  .homeHeader{
+    font-weight: 700;
+    font-size: 4vw;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+  }
+.homeImg{
+    padding: 0px 50px;
+    max-width: 100%;
+}
+  .homeSectionHeader{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .homeSectionText{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+.homeSection{
+    padding-bottom: 100px;
+  }
+
+  @media only screen and (max-width: 992px){
+    .homeSectionImg, .heroImg{
+      display: none;
+    }
+  }
+

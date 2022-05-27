@@ -1,0 +1,26 @@
+.loginPage h1, .registerPage h1{
+    margin-bottom: 18px;
+}
+.loginPage input, .registerPage input{
+    margin-bottom: 20px;
+}
+.loginLink{
+    text-align: left;
+    color: var(--primary-color);
+    font-weight: 300;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+}
+.loginLink:hover{
+    color: var(--secondary-color);
+}
+.loginPage .formCard, .registerPage .formCard{
+    margin: 5vh auto;
+}
+
+.registerPage, .loginPage {
+    min-height: calc(100vh - 200px);
+}
+
+

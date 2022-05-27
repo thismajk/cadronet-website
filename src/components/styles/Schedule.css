@@ -1,0 +1,32 @@
+.schedule{
+    margin-top: 20px;
+    width:70%;
+}
+.scheduleDay{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+.dayInfo{
+    text-align: center;
+    width: 110px;
+    border-right: 2px solid var(--primary-color);
+    float: left;
+    margin-right: 10px;
+}
+.scheduleInfo{
+    float: left;
+    width: calc(100% - 122px);
+    text-align: center;
+}
+.scheduleCard{
+    padding: 12px;
+    background-color: #17A6D3;
+    border-radius: 10px;
+    color: white;
+}
+.scheduleNone{
+    padding: 12px;
+}

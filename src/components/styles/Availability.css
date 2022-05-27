@@ -1,0 +1,128 @@
+
+
+#container {
+  width: 100%;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+#weekdays div {
+  width: calc(100% / 7);
+  color: var(--primary-color);
+  text-align: center;
+}
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.day {
+  width: calc(100% / 7 - 10px);
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + .currentDay {
+  background-color:#eafae8;
+}
+.event {
+  font-size: 16px;
+  text-align: center;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 100%;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  z-index: 20;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 10px;
+  width: 450px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+select{
+  background-color: var(--gray-color);
+  border: none;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton{
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+  margin-top: 15  px;
+
+  width: 100%;
+  padding: 10px;
+
+}
+#eventText {
+  font-size: 18px;
+  text-align: center;
+}
+#modalBackDrop {
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+.avAllow{
+    background-color: green !important;
+}
+.avDeny{
+  background-color: red;
+}

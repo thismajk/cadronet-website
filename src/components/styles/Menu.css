@@ -1,0 +1,38 @@
+.menu{
+    margin: 24px;
+}
+.logo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: var(--primary-color);
+    text-decoration: none;
+    float: left;
+  }
+  .logo:hover{
+    color: var(--secondary-color);
+  }
+
+  .nav-btn{
+    float: right;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .nav-btn:nth-child(2){
+    margin: 0px 44px;
+    padding: 10px 0px;
+  }
+  .nav-btn:nth-child(1){
+    padding: 10px 43px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+  }
+  .clear{
+      clear:both;
+  }

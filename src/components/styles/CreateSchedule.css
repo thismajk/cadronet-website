@@ -1,0 +1,53 @@
+th{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--gray-color);
+    min-width: 150px;
+    color: white;
+    background-color: var(--primary-color);
+}
+th:first-child{
+    min-width: 250px;
+}
+td{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid var(--gray-color);
+    cursor: pointer;
+}
+td:first-child{
+    padding: 10px;
+}
+tr:nth-child(odd){
+    background-color: var(--gray-color);
+}
+tr:nth-child(odd) td{
+    border: 2px solid white;
+}
+tr:nth-child(odd) td:first-child{
+    border-left: 2px solid var(--gray-color);
+}
+tr:nth-child(odd) td:last-child{
+    border-right: 2px solid var(--gray-color);
+}
+table{
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#CreateSchedule{
+    width: 100%;
+    overflow-x: scroll;
+}
+.eAvAllow{
+    background-color: rgb(235, 255, 235);
+}
+.eAvDeny{
+    background-color: rgb(255, 235, 235);
+}
+.scheduleWrapper{
+    background-color: #17A6D3;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}

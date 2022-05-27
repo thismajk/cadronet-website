@@ -1,38 +1,145 @@
-.App {
+html{
+  width: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.bold-400{
+  font-weight: 400;
+}
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --primary-color: #006221; 
+  --gray-color: #F4F4F4;
+  --secondary-color: #42B747;
+}
+.heightMiddle{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0px 50px;
+}
+
+ul{
+  list-style-type: none; 
+}
+
+li{
+  line-height: 28px;
+}
+
+li:before{
+  content:"\002022   ";
+  color: #2c2c2c;
+}
+
+.formCard{
+  padding: 20px;
+  background-color: var(--gray-color);
+  border-radius: 24px;
   text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: 30px;
+  color: var(--primary-color);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-20{
+  font-size: 20px;
+  font-weight: 400;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: white;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+input[type=submit]{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
   color: white;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: 0px;  
 }
 
-.App-link {
-  color: #61dafb;
+.logoWhite{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vw;
+  line-height: 56px;
+  color: white;
+  text-decoration: none;
+}
+.appContent{
+  width: 80%;
+  float: left;
+  padding: 20px;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.simpleBtn{
+  background-color: var(--primary-color);
+  color: white; 
+  padding: 8px;
+  text-decoration: none;
+  margin: 0px 10px; 
+  border-radius: 10px;
+  float: left;
+  border: 0px;  
+}
+.simpleBtn:hover{
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+#header{
+  float: left;
+}
+#header div{
+  background-color: var(--primary-color);
+  color: white;
+  width: 190px;
+  padding: 5px;
+  text-align: center;
+  float: left;
+  font-size: 20px;
+}
+#header button{
+    float: left;
+    border: 0px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+#header button:hover{
+  background-color: var(--secondary-color);
+}
+#header button:first-child{
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 2px;
+}
+#header button:last-child{
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 2px;
+}
+.wrapper{
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);;
 }
